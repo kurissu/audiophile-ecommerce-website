@@ -28,13 +28,13 @@ const ProductLink: React.FC<OtherProductsProps> = ({
       >
         {name}
       </Heading>
-      <Link href={`/${slug}`}>
+      <Link href={`/${slug}`} legacyBehavior>
         <Button as="a" cursor="pointer" mt={{ base: '32px' }}>
           See Product
         </Button>
       </Link>
     </Box>
-  )
+  );
 }
 
 export default ProductLink

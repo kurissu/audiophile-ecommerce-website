@@ -50,14 +50,14 @@ const YX1Earphones = (): JSX.Element => {
             <Heading as="h2" mb="2rem" fontSize="1.75rem" color="black">
               YX1 Earphones
             </Heading>
-            <Link href="/earphones/yx1-earphones" passHref>
+            <Link href="/earphones/yx1-earphones" passHref legacyBehavior>
               <Button variant="secondary">See Product</Button>
             </Link>
           </Box>
         </Box>
       </FadeInOnScroll>
     </SimpleGrid>
-  )
+  );
 }
 
 export default YX1Earphones

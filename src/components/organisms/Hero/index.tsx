@@ -85,14 +85,14 @@ const Hero = (): JSX.Element => {
           Experience natural, lifelike audio and exceptional build quality made
           for the passionate music enthusiast.
         </Text>
-        <Link href="/headphones/xx99-mark-two-headphones" passHref>
+        <Link href="/headphones/xx99-mark-two-headphones" passHref legacyBehavior>
           <Button as="a" cursor="pointer">
             See Product
           </Button>
         </Link>
       </MotionContainer>
     </MotionBox>
-  )
+  );
 }
 
 export default Hero

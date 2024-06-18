@@ -32,13 +32,13 @@ const ZX7Speaker = (): JSX.Element => {
           <Heading mb="2rem" fontSize="1.75rem" color="black">
             ZX7 Speaker
           </Heading>
-          <Link href="/speakers/zx7-speaker" passHref>
+          <Link href="/speakers/zx7-speaker" passHref legacyBehavior>
             <Button variant="secondary">See Product</Button>
           </Link>
         </Box>
       </Box>
     </FadeInOnScroll>
-  )
+  );
 }
 
 export default ZX7Speaker

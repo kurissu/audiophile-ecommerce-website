@@ -250,7 +250,7 @@ const CheckoutForm = (): JSX.Element => {
       </Box>
       <Summary isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
     </Stack>
-  )
+  );
 }
 
 export default CheckoutForm

@@ -89,7 +89,7 @@ const CartModal = (): JSX.Element => {
                 $ {amount.toLocaleString('en-US')}
               </Text>
             </HStack>
-            <Link href="/checkout" passHref>
+            <Link href="/checkout" passHref legacyBehavior>
               <Button
                 as="a"
                 cursor="pointer"
@@ -131,7 +131,7 @@ const CartModal = (): JSX.Element => {
         )}
       </ModalContent>
     </Modal>
-  )
+  );
 }
 
 export default CartModal

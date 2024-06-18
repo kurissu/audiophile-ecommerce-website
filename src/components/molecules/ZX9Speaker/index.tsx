@@ -70,7 +70,7 @@ const ZX9Speaker = (): JSX.Element => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </Text>
-          <Link href="/speakers/zx9-speaker" passHref>
+          <Link href="/speakers/zx9-speaker" passHref legacyBehavior>
             <Button bg="black" _hover={{ bg: '#4C4C4C' }}>
               See Product
             </Button>
@@ -78,7 +78,7 @@ const ZX9Speaker = (): JSX.Element => {
         </Box>
       </Stack>
     </FadeInOnScroll>
-  )
+  );
 }
 
 export default ZX9Speaker

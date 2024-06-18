@@ -24,11 +24,11 @@ const FooterLinks = (): JSX.Element => {
           color="white"
           textTransform="uppercase"
         >
-          <Link href={link.url}>{link.text}</Link>
+          <Link href={link.url} legacyBehavior>{link.text}</Link>
         </Box>
       ))}
     </Stack>
-  )
+  );
 }
 
 export default FooterLinks

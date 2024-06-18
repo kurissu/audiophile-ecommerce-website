@@ -41,12 +41,12 @@ const NavLink: React.FC<{ href: string; active: boolean }> = ({
   const child = React.Children.only(children)
 
   return (
-    <Link href={href} passHref>
+    <Link href={href} passHref legacyBehavior>
       {React.cloneElement(child as React.ReactElement, {
         'aria-current': active ? 'page' : null,
       })}
     </Link>
-  )
+  );
 }
 
 export default NavLinks

@@ -33,53 +33,53 @@ const CategoryLink = ({
       }}
     >
       <Link href={url} passHref>
-        <a>
-          <Box pt="5.5rem" pb="1.375rem">
+
+        <Box pt="5.5rem" pb="1.375rem">
+          <Image
+            position="absolute"
+            top="0"
+            left="50%"
+            transform="translate(-50%, -38%)"
+            width="8.625rem"
+            objectFit="cover"
+            src={img}
+            alt=""
+            aria-hidden="true"
+          />
+          <Heading
+            as="h2"
+            mb="1rem"
+            fontSize={{ base: '0.9375rem', lg: '1.125rem' }}
+            letterSpacing={{ base: '0.0669em', lg: '0.0806em' }}
+          >
+            {text}
+          </Heading>
+          <HStack
+            spacing="0.8325rem"
+            justifyContent="center"
+            _hover={{
+              cursor: 'pointer',
+            }}
+          >
+            <Text
+              color="text"
+              fontWeight="bold"
+              fontSize="0.8125rem"
+              textTransform="uppercase"
+            >
+              Shop
+            </Text>
             <Image
-              position="absolute"
-              top="0"
-              left="50%"
-              transform="translate(-50%, -38%)"
-              width="8.625rem"
-              objectFit="cover"
-              src={img}
+              src="/images/shared/desktop/icon-arrow-right.svg"
               alt=""
               aria-hidden="true"
             />
-            <Heading
-              as="h2"
-              mb="1rem"
-              fontSize={{ base: '0.9375rem', lg: '1.125rem' }}
-              letterSpacing={{ base: '0.0669em', lg: '0.0806em' }}
-            >
-              {text}
-            </Heading>
-            <HStack
-              spacing="0.8325rem"
-              justifyContent="center"
-              _hover={{
-                cursor: 'pointer',
-              }}
-            >
-              <Text
-                color="text"
-                fontWeight="bold"
-                fontSize="0.8125rem"
-                textTransform="uppercase"
-              >
-                Shop
-              </Text>
-              <Image
-                src="/images/shared/desktop/icon-arrow-right.svg"
-                alt=""
-                aria-hidden="true"
-              />
-            </HStack>
-          </Box>
-        </a>
+          </HStack>
+        </Box>
+
       </Link>
     </Box>
-  )
+  );
 }
 
 export default CategoryLink

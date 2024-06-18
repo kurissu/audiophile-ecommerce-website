@@ -75,14 +75,14 @@ const CategoryPageItem: React.FC<Product> = ({
         >
           {description}
         </Text>
-        <Link href={`/${category}/${slug}`} passHref>
+        <Link href={`/${category}/${slug}`} passHref legacyBehavior>
           <Button as="a" cursor="pointer">
             See Product
           </Button>
         </Link>
       </Box>
     </Stack>
-  )
+  );
 }
 
 export default CategoryPageItem
